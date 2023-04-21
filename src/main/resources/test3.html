@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<head>
+  <meta charset="UTF-8">
+  <title>Title</title>
+</head>
+  <body>
+<!--    <div class="head">-->
+<!--      <div>-->
+<!--        <h1>我是标题内容，每个页面都有</h1>-->
+<!--      </div>-->
+<!--      <hr>-->
+<!--    </div>-->
+    <div th:replace="head.html::head-title('这个是第2个页面的二级标题')"></div>
+    <div class="body">
+      <div>这个页面的样子是这样的</div>
+    </div>
+  </body>
+</html>
